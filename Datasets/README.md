@@ -29,5 +29,13 @@ La segunda película con mayor score para una plataforma determinada, según el 
 
 D- Película que más duró según año, plataforma y tipo de duración
 
-E- Primero Unimos 
-Cantidad de series y películas por rating
+E- Primero Unimos en una nueva variable los 4 datafarmes con el metodo pd.concat() y axis = 0 para asi poder utilizar solamente una base de datos y aprovechando que las 4 son iguales, axis=0 nos permite que todas las columnas al estar pocisionada y nombradas igual esta se fusionan en una sola. Dentro de la funcion colocamos el parametro rating y luego colocamos una nueva variable (en este caso llamada df) que guarda: si el valor en la columna general rating es igual a el valor del parametro rating, entonces, retorna df.shape[0] esto devuelve el numero de filas que cumplen con la condicion antes mencionada. Cantidad de series y películas por rating
+
+3) ARMADO DE APIS, REALIZACION DE CONSULTAS ONLINE
+En este paso se decidio ocupar el programa FastApi. creado por un latinoamericano. El mismo presenta beneficios operativos frente a otros sistemas, como la realizacion de la "dokerizacion"de manera automatica, se busco instructivos sobre como operar con esta libreria tan util. 
+Para ello fue necesario crear un archivo .py, al mismo se lo denomino main.py . este archivo contendria la importacion de fastapi, y las librerias necesarias para su ejecucion.  Su preceso de instanciado en un objeto llamado "app". el cual sera evocado mediante un "decorado" consignado por la varibale @app (app =nombre que se le otorgo a la variable) 
+cada funcion se definio posterior a su vinculacion mediante este metodo. colocando las diferentes funciones creadas anteriormente en jupyter. 
+luego de esta confeccion, mediante la consola se realiza un entorno virtual, mediante la descarga de fastapi y uvicorn 
+se entro en este entorno virtual y se activo mediante la consola la funcion uvicorn main(nombre del archivo):app (nombre de la variable) --reload, funcion que permite cargar todos los cambios realizados en el archivo cada vez que se consulte. 
+
+4) desde deta se descarga el Deta CLI, posteriormetnte se crea una cuenta en Deta. se coloca el comando deta loing, ingresando a nuestra cuenta en Deta. luego mediante ubicarnos (en el directorio de la consola) donde tenemos nuestros archivos.py , bases de datos limpias, un txt especifico y el programa nos facilita una direccion para realizar nuestras consultas.
