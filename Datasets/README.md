@@ -23,10 +23,11 @@ A- Dentro de la función recibe dos parámetros llamados plataforma (para indica
 
 B- En este caso la función recibe tres parámetros, plataforma (para indicar a que base de datos ingresa) score (que corresponde a un puntaje numérico o int) y el anio (correspone al año de estreno).
   Dentro de la función es similar a la anterior ya que posee un if y tres elif que corresponden a cada una de las plataformas que pueden elegirse. Y cada uo responde de la siguente manera, si por ejemplo en el caso del if el parámetro plataforma fuera igual al string amazon este guarda en una variable (df) una fila si esta cumple con las condiciones de que la columna type del string amazon sea igual al sating movie ademas que la columna score sea mayor al valor score dentro del parámetro y el valor de la columna  sea igual al valor del parámetro anio, entonces esta fila es guardada en el dataframe anidado en la variable df. Para finalmente retornar el valor de df.shape[0] el cual indica el numero de filas presentes en df.
-Cantidad de películas por plataforma con un puntaje mayor a XX en determinado año
 
-C- La segunda película con mayor score para una plataforma determinada, según el orden alfabético de los títulos.
+C- 
+La segunda película con mayor score para una plataforma determinada, según el orden alfabético de los títulos.
 
 D- Película que más duró según año, plataforma y tipo de duración
 
-E- Cantidad de series y películas por rating
+E- Primero Unimos 
+Cantidad de series y películas por rating
